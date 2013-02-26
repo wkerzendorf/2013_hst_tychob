@@ -1,0 +1,163 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%    phase1-GO.tex  (use only for General Observer and Snapshot proposals; 
+%                      use phase1-AR.tex for Archival Research and
+%                      Theory proposals use phase1-DD.tex for GO/DD proposals).
+%
+%    HUBBLE SPACE TELESCOPE
+%    PHASE I OBSERVING PROPOSAL TEMPLATE 
+%     FOR CYCLE 20 (2012)
+%
+%    Version 1.1, February 03, 2012.
+%
+%    Guidelines and assistance
+%    =========================
+%     Cycle 20 Announcement Web Page:
+%
+%         http://www.stsci.edu/hst/proposing/docs/cycle20announce 
+%
+%    Please contact the STScI Help Desk if you need assistance with any
+%    aspect of proposing for and using HST. Either send e-mail to
+%    help@stsci.edu, or call 1-800-544-8125; from outside the United
+%    States, call [1] 410-338-1082.
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% The template begins here. Please do not modify the font size from 12 point.
+
+\documentclass[12pt]{article}
+\usepackage{phase1}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\include{journal_definitions}
+\newcommand{\feii}{Fe~\textsc{ii}}
+\begin{document}
+
+%   1. SCIENTIFIC JUSTIFICATION
+%       (see Section 9.1 of the Call for Proposals)
+%
+%
+\justification
+
+Type Ia supernovae (SN Ia) are of broad interest. They are physically interesting endpoints of stellar evolution, are major contributors to galactic chemical evolution, and serve as one of astronomy's most powerful cosmological tools. 
+Despite the knowledge that SN Ia are powered by runaway nuclear fusion of a massive CO white dwarf, the way the white dwarf is ignited remains a mystery. It is thought that either the merger of two white dwarfs or the accretion from a non-degenerate companion star lead to the required state of the white dwarf which explodes. However, only the latter leaves a unique signature - a surviving companion.
+
+While searching the remnant of SN1572 for the aforementioned surviving companion of this Type Ia supernova,  we stumbled upon a rather unusual star: Tycho-B, an A-star with a very low metallicity of [Fe/H] $\approx -1$ and enhanced oxygen and carbon \citep{2012arXiv1210.2713K}. Such a low metallicity star should not exist anymore in the Galaxy, yet we find one within mere arc seconds from the centre of the remnant. We cannot prove it's association with SN1572 our current distance measurement is too crude (it is distance consistent with the remnant to within one kpc). We propose to obtain NUV spectra with STIS  to look for absorption from the ejecta and thus determine if Tycho-B is indeed located within the remnant or just a foreground or background object.
+
+\feii\ is expected to exist in the un-decelerated ejecta of young Ia SN, and if this is the case, we can use this  to determine if Tycho-B is within the remnant.
+If Tycho-B is within the remnant, NUV spectra (with STIS) will show blue-shifted iron absorption lines, due to a line-of-sight effect, from the expanding supernova ejecta. No iron absorption lines would establish Tycho-B as a foreground object and broad lines with blue and red-shifted wings would place Tycho-B in the background. For a very modest investment of two orbits, we will be able to determine if Tycho-B is in the remnant and thus a strong progenitor candidate. If Tycho-B is located in the background, absorption spectra will be extremely valuable to study the composition and kinematics of cold ejecta within the remnant -- an approach that has proved extremely successful for SN 1006 \citep[e.g.][]{1988ApJ...327..164F,1993ApJ...416..247W,2005ApJ...624..189W}, but which has not been used for any other SN Ia remnant.
+
+\vspace{-5mm}
+\paragraph{What makes a Type Ia Supernova?}
+SN Ia are believed to be the explosive burning of Carbon/Oxygen white dwarfs. Theory predicts that white dwarfs will self ignite when close to the critical Chandrasekhar mass of  $1.38\,M_\odot$. 
+It is believed that SN Ia originate in binary-star systems where a white dwarf accretes material from a companion star until it approaches the Chandrasekhar mass, and carbon ignites near the star's center. If the companion star is a main-sequence to red-giant star (single-degenerate scenario) we expect the companion star to survive the explosion. Another scenario sees the merger of two white dwarfs as the progenitor for SN Ia (double-degenerate scenario), which does not leave a surviving star. 
+Although initially the single degenerate scenario was favoured, the last couple of years have seen a steady increase of evidence against this scenario. For now, SN1006 \citep{2012Natur.489..533G,2012ApJ...759....7K}, SN1604 (Kerzendorf. et al. 2013 in prep.) and SNR 0509-67.5 in the LMC \citep{2012Natur.481..164S} have failed to reveal an uniquely identifiable companion. However, \citet{2011Sci...333..856S, 2007Sci...317..924P, 2012arXiv1203.2916F} suggest that for at least a quarter of SN Ia there are signs of circumstellar interaction - suggesting a single degenerate origin. In summary, both observation and theory support the two scenarios, with some community members suggesting that both channels may be responsible for the SN Ia phenomenon. This makes the identity of Tycho-B even more crucial.
+
+
+\vspace{-5mm}
+\paragraph{Donor Stars}
+In the single-degenerate case, the consequences for the donor star post-explosion have been extensively explored by several groups. \citet{2000ApJS..128..615M} calculated the impact of a SN Ia explosion on a variety of binary companions. \citet{2001ApJ...550L..53C} have explored many of the observational consequences for a variety of possible progenitor scenarios; \citet{2004MNRAS.350.1301H} and \citet{Han:2008p726} followed the time evolution of the binary accretion in the supersoft SN Ia channel and determined the donor properties at the time of the explosion, while \citet{2003astro.ph..3660P} has explored the post-explosion evolution of the out-of-equilibrium star. \citet{2009ApJ...701.1665K} have suggested that post-explosion rotation - a relic of tidal locking during Roche Lobe Overflow - might be a good indicator for a donor star. 
+To summarize these results, main-sequence and subgiant companions lose 10-20 \% of their envelopes and have a resulting spatial velocity of 100-300 km/s and will have rotational velocities of 120-140 km/s, whereas a red-giant companion loses most of its hydrogen envelope, leaving a helium core (and a small amount of envelope material), with a spatial velocity of about 10-50 km/s and a rotational velocity of around 60 km/s.
+
+\vspace{-5mm}
+\paragraph{The Hunt for Donor Stars in SN1572}
+Tycho's supernova (a.k.a. SN1572) is relatively close ($2.8\pm0.8$~kpc), very young, and has been confirmed as a normal Type Ia both from the remnant \citep{2006ApJ...645.1373B} and the light echo \citep{2008ApJ...681L..81R,2008Natur.456..617K}. This makes it a perfect hunting ground for donor stars.
+
+On the basis of an unusual spatial velocity and distance compatibility with SN1572, \citet{2004Natur.431.1069R} proposed ``Tycho-G'' (by their nomenclature) to be the donor star to SN1572.  However, theory indicates that donor stars should be rapidly rotating and \citet{2009ApJ...701.1665K} found this not to be the case for Tycho-G. Kerzendorf, et al. 2012 (in prep.) have followed up six stars with Keck HIRES in the center of SN 1572 (see Figure 1a) and find that five stars rotate less than 6.5\,km/s and show no other strong peculiarities (including Tycho-G). But there is one star in this sample that stands out: Tycho-B.
+
+\vspace{-5mm}
+\paragraph{The curious case of Tycho-B}
+Tycho-B is a rapidly rotating ($v_\textrm{rot} \sin{i}=170$~km/s) A-Star (Teff=10,700\,K) with a log(g)=4.1 making it a very promising candidate. In particular, as it is located within arc seconds to the x-ray centre of the remnant and with $1.8\pm 0.8$~kpc is distance compatible with the remnant of SN1572 ($2.8\pm0.8$~kpc). In addition, Tycho-B shows an extremely unusual abundance pattern of low metallicity ([Fe/H]=-1) and relatively high C and O abundances.
+
+Despite these remarkable features, the standard single-degenerate scenario seems to fail \citep{2012arXiv1210.2713K}.  It sees the rotational velocity being induced tidally resulting in a coupling of spatial velocity and rotational velocity. Thus, predicting a high spatial velocity for Tycho-B - which it lacks. 
+
+However, a "normal" A-Star model for Tycho-B seems to fail as well, mostly due to the extreme low metallicity. This conundrum has already triggered theoretical speculations \citep[e.g.][]{2012arXiv1212.2662T}. To lend support or rule out any scenarios it is crucial to find out if SN1572 could have been responsible for the current state of Tycho-B.
+
+In summary, finding such a rare type of star close to the remnant of a supernova is tantalizing evidence (the probability of a chance alignment are very slim) for an involvement with SN1572, but requires the proof that Tycho-B is within the remnant.
+
+\vspace{-5mm}
+\paragraph{In or out?}
+Establishing Tycho-B's location to be within the remnant would provide very convincing evidence for interaction of SN1572 and Tycho-B. 
+Fesen et al. 1988, Wu et al. 1993, Winkler et al. 2005 all have used UV absorption line studies (in particular the \feii\ line at 2600~\AA) to scrutinize the structure of the SN1006 remnant along several lines of sight. Their background objects show absorption lines with very broad red and blue components (from the advancing and receding side of the ejecta; see Figure 1b), an object in the remnant would only show blue-shifted absorption features and a foreground object will show no absorption features at all. This technique to establish a distance has been trued by \citet{2007PASJ...59..811I} on some stars in SN1572. This has not revealed conclusive evidence due to the quality of the data (Tycho-B was also not part of that study). Using the NUV could generate a much stronger signal as the \feii lines are better than the optical ones (????? PLEASE CLARIFY????) . We propose to take two orbits of low-resolution STIS observations of Tycho-B to look for these absorption features. If found,  this proves an involvement of Tycho-B with SN1572 and may provide the missing piece that links some SN Ia with the single degenerate scenario.
+
+\begin{figure}[h!] %  figure placement: here, top, bottom, or page
+\vspace{-0mm}
+\subfigure[Overview of inner region of the remnant of SN1572. Tycho-B, the most promising candidate for a donor star, is located very close to the X-ray geometric center (arrow indicates Tycho-B).]{\includegraphics[width=0.4\textwidth]{Plots/overview_sn1572.pdf}}
+\subfigure[\feii\ absorption features of the remnant on a background UV source \citep{1993ApJ...416..247W}]{
+\includegraphics[width=0.45\textwidth]{Plots/Wu_1997_fig_2.pdf}}
+\vspace{-.2cm}
+\end{figure}
+
+\newpage
+         % Do not delete this command.
+% Enter your scientific justification here. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%   2. DESCRIPTION OF THE OBSERVATIONS
+%       (see Section 9.2 of the Call for Proposals)
+%
+%
+\describeobservations   % Do not delete this command.
+% Enter your observing description here.
+
+We propose an observations that is not possible from the ground, due to the atmospheric cut-off in the UV. The position of Tycho-B allows it to be observable for 51 minutes per orbit (shortened from 59 minutes due to ``Increased scheduling flexibility'' -- a requirement for our RA). We propose two orbits of observations.
+
+To establish Tycho-B's position in the remnant we need a UV spectrum that covers the \feii\ absorption features at 2600\,\AA\ with a S/N of roughly 10. The absorption features are broadened by several 1000~km/s (see Figure 1b) and so we opt for the low-resolution grating G230L (R=700 or 400 km/s) on MAMA (enhanced sensitivity in this wavelength region compared to CCD), with a slit geometry of 52\arcsec\ x 0.5 \arcsec\ (relatively isolated star). Using the STIS ETC (ver 20.1.1) and assuming V = 15.4, with Pickles Models A0V, and E(B-V) of 0.85 (reddening estimated by fitting a flux-calibrated spectrum of Tycho-B; consistent with Tycho-E - a background source) we need  4,457~s. 
+
+Our target with 'increased scheduling flexibility' (a requirement for our target RA) is visible for 51 minutes per orbit. Using two orbits with an overhead of 20 minutes (6 minutes guide star acquisition, we can obtain 2x1860~s of integration time. This results in a S/N of  9.14, appropriate for our requirements. We will orient the STIS slit to minimize the light that enters the spectrograph from the very bright star Tycho-A. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%   3. SPECIAL REQUIREMENTS
+%       (see Section 9.3 of the Call for Proposals)
+%
+%
+\specialreq             % Do not delete this command.
+% Justify your special requirements here, if any.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%   4. COORDINATED OBSERVATIONS
+%       (see Section 9.4 of the Call for Proposals)
+%
+%
+\coordinatedobs          % Do not delete this command.
+% Enter your coordinated observing plans here, if any.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%   5. JUSTIFY DUPLICATIONS
+%       (see Section 9.5 of the Call for Proposals)
+%
+%
+\duplications           % Do not delete this command.
+% Enter your duplication justifications here, if any.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%   6. PAST HST USAGE
+%       (see Section 9.8 of the Call for Proposals)
+%
+%        List here the program numbers and data status for all accepted GO/AR/SNAP 
+%        programs of the PI in at least the last four HST Cycles. Include a list of refereed publications 
+%        resulting from these programs.       
+%
+%       Note that the description of past HST usage  DOES NOT count against the page limits of the proposal.
+%
+\pasthstusage  % Do not delete this command.
+The PI has not used HST in the past, however Winkler and Long both have experience with STIS spectroscopy.
+% Enter your Past HST Usage and current commitments for the PI
+% and other key investigators.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\bibliographystyle{hapj}
+\bibliography{hst_phasei_tychob}
+\end{document}          % End of proposal. Do not delete this line.
+                        % Everything after this command is ignored.
+
